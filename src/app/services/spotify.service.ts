@@ -15,7 +15,7 @@ export class SpotifyService {
   getArtistas( termino: string ){
     let headers = new Headers();
 
-    headers.append('authorization', 'Bearer BQBEj-aBFDCXjjPkwYLtkbSDs2mFrLEKHBuyxbAVI5v6-dILekndOE3n8VzLJ9ru46rhF7uzFJVO3y1x6bFMNQ');
+    headers.append('authorization', 'Bearer BQBh4460Kpg4ihXKi-0nWLMHqHyJjIAB76PZXx0cANpyJQzBmCdi2YrQ6b64-WuIZXsVpaL5ElgjbLlsdoaYQQ');
     let query = `?q=${ termino }&type=artist`;
     let url = this.urlBusqueda + query;
 
@@ -30,7 +30,7 @@ export class SpotifyService {
   getArtista(id: string ){
     let headers = new Headers();
 
-    headers.append('authorization', 'Bearer BQBEj-aBFDCXjjPkwYLtkbSDs2mFrLEKHBuyxbAVI5v6-dILekndOE3n8VzLJ9ru46rhF7uzFJVO3y1x6bFMNQ');
+    headers.append('authorization', 'Bearer BQBh4460Kpg4ihXKi-0nWLMHqHyJjIAB76PZXx0cANpyJQzBmCdi2YrQ6b64-WuIZXsVpaL5ElgjbLlsdoaYQQ');
 
     let query = `/${id}`;
     let url = this.urlArtista + query;
@@ -44,7 +44,7 @@ export class SpotifyService {
   getTop(id: string ){
     let headers = new Headers();
 
-    headers.append('authorization', 'Bearer BQBEj-aBFDCXjjPkwYLtkbSDs2mFrLEKHBuyxbAVI5v6-dILekndOE3n8VzLJ9ru46rhF7uzFJVO3y1x6bFMNQ');
+    headers.append('authorization', 'Bearer BQBh4460Kpg4ihXKi-0nWLMHqHyJjIAB76PZXx0cANpyJQzBmCdi2YrQ6b64-WuIZXsVpaL5ElgjbLlsdoaYQQ');
     let query = `/${id}/top-tracks?country=US`;
     let url = this.urlArtista + query;
 
